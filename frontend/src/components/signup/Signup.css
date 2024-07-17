@@ -1,0 +1,77 @@
+/* Signup.css */
+
+.signup-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    background-image: url(../../assets/Schedule.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .signup-container label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .signup-container button {
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-container button:hover {
+    background-color: #0056b3;
+  }
+  

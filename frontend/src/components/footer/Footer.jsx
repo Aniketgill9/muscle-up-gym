@@ -1,0 +1,62 @@
+import styles from "./footer.module.css";
+import logoIcon from "../../assets/Icon.png";
+import { useNavigate } from "react-router";
+
+const Footer = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className={styles.footer}>
+      <div className={styles.footer_image}>
+       
+      </div>
+      <div className={`${styles.footer_content} container `}>
+        <div>
+          <div className={styles.logo_holder}>
+            <img src={logoIcon} alt="Logo Icon" />
+
+            <h3>Muscle up gym</h3>
+          </div>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable.
+          </p>
+          <div className={styles.info}>
+            <span>Call :</span>
+            <p>+91 8091909801</p>
+            <span>Email :</span>
+            <p>gillaniket2002@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>Utility Pages</li>
+           
+            <li onClick={() => navigate("/schedule")}>Schedule</li>
+            <li onClick={() => navigate("/contact")}>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <input type="text" placeholder="Enter Your Email" />
+          <button>Subscribe</button>
+          <div className={styles.footer_icons}>
+            <a
+              href="https://www.instagram.com/_muscleup_gym/"
+              target="_blank">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/muscleupgym2023/?igsh=dzM5cWNyMTk4czFn/"
+              target="_blank">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
